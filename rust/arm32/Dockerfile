@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install \
     build-essential \
     libssl-dev \
-    openssl-dev \
+    pkg-config \
     -y
 
 ENTRYPOINT [ "./start.sh" ]
